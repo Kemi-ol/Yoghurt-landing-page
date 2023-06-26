@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoghurt</title>
+    <style>
+      body {
+        background: radial-gradient(
+          328px at 2.9% 15%,
+          rgb(191, 224, 251) 0%,
+          rgb(232, 233, 251) 25.8%,
+          rgb(252, 239, 250) 50.8%,
+          rgb(234, 251, 251) 77.6%,
+          rgb(240, 251, 244) 100.7%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: coral;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid coral;
+        line-height: 50px;
+        font-size: 18px;
+        border-radius: 10px;
+      }
+      .main{
+        display:block;
+        margin: 0 auto;
+        max-width: 95%;
+        border-radius: 10px;
+      }
+      .minor{
+        display:block;
+        margin: 0 auto;
+        max-width: 110%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: auto;
+        background-color: coral;
+        border-radius: 20px;
+        border: none;
+        padding: 15px;
+        font-size: 18px;
+        box-shadow: 5px, 5px, 10px rgba(0, 0, 0, 0.8);
+      }
+      button:hover {
+        opacity: 0.8;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 12px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: coral;
+        font-size: 18px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 80px;
+      }
+      ul{
+        list-style-type: none;
+      }
+      .column{
+        float:right;
+        width: 45.2%;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Youghurt</h1>
+      <h2>Especially Greek Yogurt</h2>
+      <ul>
+        <li>
+          <div class="row">
+          <div class ="column">
+          <img src="https://www.maplefromcanada.co.uk/uploads/2020/11/Frozen-strawberry-yogurt-bark-V2-600x450.jpg" class="main"
+        alt="protein yoghurt"
+        </div>
+        </li>
+        <li>
+          <div class="column">
+          <img src="https://realfood.tesco.com/media/images/Yoghurt-Pots-Final-1400x919-2aa74c0e-2450-4010-949c-8bb6758017d3-0-1400x919.jpg" class="minor" alt="">
+        </div>
+      </li>
+      </ul>
+    </br>
+    <br>
+      <p>
+        Being rich in protein and calcium, Greek yogurt may help you feel more
+        satisfied after eating. This is because this combination of nutrients
+        helps to increase levels of appetite-suppressing hormones. Including
+        yogurt in your diet is also associated with a lower body weight, body
+        fat percentage and waist circumference.
+      <a
+        href="https://www.bbcgoodfood.com/howto/guide/greek-yogurt-healthy"
+        target="_blank"
+        class="learn-more"
+      >
+        See more
+      </a>
+      </p>
+      <button>Order Now</button>
+      <p class="footer">This page was built by Kemi</p>
+    </div>
+    <script>
+      function order() {
+        let name = prompt("What is your name?");
+        let email = prompt("Please enter your email address");
+        let emoji = prompt("What is your fav emoji?");
+        alert(
+          "Hi " +
+            name +
+            "! " +
+            "We'll be in touch by email soon, Thank you" +
+            emoji
+        );
+      }
+      let orderButton = document.querySelector("button");
+      orderButton.addEventListener("click", order);
+    </script>
+  </body>
+</html>
